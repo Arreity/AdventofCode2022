@@ -1,0 +1,55 @@
+file1 = open('input', 'r')
+Lines = file1.readlines()
+
+
+
+
+
+sample_gameboard = [
+ for i in range (0,howmany):
+        step1 = gameboard[takestack-1].pop()
+        step2 = gameboard[givestack-1].append(step1)
+
+
+
+
+
+["Z", "N"],
+ ["M", "C", "D"],
+ ["P"],
+]
+for line in Lines:  # Use the same variable name for the list and the loop variable
+    #parts = line.strip('\n').split(',')
+    #print(parts)
+
+    for i, elem in enumerate(parts):
+        
+        if elem == "['']":
+            # Check if the element before this one exists
+            if i > 0:
+                # Print the element before the empty string
+                print("The element before the empty string at index {} is: {}".format(i-1, parts[i-1]))
+            else:
+                print("none")
+
+#supplies store in stacks of marked crates
+#giant cargo crane
+#which crate will end up on top of ea stack in one lin""
+#move" starting from the top "1" index "from" the "second" stack index to the first
+# move "box" from top of "pile(x)" to pile(y)
+def gameboard
+    for line in gameboard
+    stack1 = 
+    stack2
+    stack3
+def move
+    grab Line
+    remove everything except numbers
+    assign varibale to the index of ea number
+    box = 0
+    pile1 = 1
+    pile2 = 2
+        for line in gameboard:
+            lastbox = 
+
+"""
