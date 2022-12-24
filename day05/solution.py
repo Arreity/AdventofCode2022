@@ -5,12 +5,26 @@ raw_gameboard = Lines[0:8]
 raw_gameboard.reverse()
 #print(raw_gameboard)
 
+def create_gameboard(raw_gameboard):
+    gameboard = [[] for _ in range(8)]
+    print(gameboard)  # Create 8 empty lists
+
+    for i, line in enumerate(raw_gameboard):  # Iterate over the lines and their indices
+        line = line.rstrip('\n')
+        print(line)
+        gameboard[i] = [line[j] for j in range(0, len(line), 4)]  # Extract elements four indices apart and assign them to the current list in gameboard
+    print(line)
+#working code down, pretty rewritten code dump above
+"""
 def create_gameboard():
     gameboard = [[],[],[],[],[],[],[],[],[]]
 
     for line in raw_gameboard:
 
         line = line.rstrip('\n')
+
+        #gameboard = [x[i] for i in range(0, len(9), 4)]
+        print(gameboard)
 
         part1 = line[1]
         #print(part1)
@@ -92,23 +106,4 @@ for line in raw_instructions:
 print("JRVNHHCSJ")
 for stack in gameboard:
     print(stack[-1])
-    #print(gameboard)
-
-    #take howmany from takestack, remove from take stack, add to givestack
-
-
-
-    #print(howmany,takestack,givestack)
-
-
-
-
-
-
-
-#print(gameboard)
-
-#print(gameboard)
-
-    #for i, element in enumerate(line):
-        #print(f"{i}: {element}") 
+"""
